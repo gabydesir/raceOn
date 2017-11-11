@@ -1,0 +1,76 @@
+
+h1 {
+  font-size: 30px;
+  color: yellow;
+  margin: 30px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+}
+
+body {
+  background-image: url('http://cliparting.com/wp-content/uploads/2017/02/Race-car-racing-clip-art-free-vector-freevectors-clipartcow-3.png');
+  background-repeat: no-repeat;
+  border-image: unset;
+  background-color:  #FF9900;
+  background-position: top right;
+  background-size: 30%;
+
+}
+
+#race {
+  background-image: url('images/racing-border.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  padding: 200px;
+}
+
+#banner {
+  margin: 100px;
+  font-style: Monaco;
+  font-size: 35px;
+}
+
+#button {
+  margin: 40px;
+  border-radius: 20px;
+  font-size: 25px;
+  position: absolute;
+  left: 30%;
+}
+
+#button:hover {
+  background-color: #7CFC00;
+
+}
+
+.player {
+  left: -320px;
+  position: relative;
+}
+
+.car1 {
+  top: -20px;
+  margin: -10px;
+  position: relative;
+}
+
+.car2 {
+  top: 35px;
+  margin: -10px;
+}
+
+#reset {
+  margin: 40px;
+  border-radius: 20px;
+  font-size: 25px;
+  position: absolute;
+  right: 30%;
+}
+
+
+

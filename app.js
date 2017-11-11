@@ -1,9 +1,12 @@
+
+
 const startGame = function(){
   // created my cars so I can grab them later on...
 const car1 = document.querySelector('.car1');
 const car2 = document.querySelector('.car2');
 const container = document.querySelector('.container');
 const banner = document.getElementById('banner');
+const reset = document.getElementById('reset');
 
  //set global values
 let p1DivLeft = 12;
@@ -27,18 +30,22 @@ document.addEventListener('keyup', function game(event){
     car2.style.left = `${p2DivLeft}px`;
   }
   //checking if player 1 won
-  if (car1.style.left > '820px') {
-    banner.innerHTML = 'Player 1 Wins!!!';
+  if (car1.style.left > '800px') {
+    banner.innerHTML = 'Green Wins!!!';
     document.removeEventListener('keyup', game);
   }
-   if (car2.style.left > '820px') {
-    banner.innerHTML = 'Player 2 Wins!!!';
+   if (car2.style.left > '800px') {
+    banner.innerHTML = 'Yellow Wins!!!';
     document.removeEventListener('keyup', game);
     }
   })
 }
 
 window.onload = function() {
-  document.querySelector('.button').addEventListener('click', startGame);
+  document.querySelector('#button').addEventListener('click', startGame);
   /* write your code here */
 };
+
+  document.querySelector('#reset').addEventListener('click', function(){
+    location.reload()
+  })

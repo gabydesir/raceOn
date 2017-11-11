@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Gaby's Div Racer</title>
-  <link href="./styles.css" rel= "stylesheet" type= "text/css">
+  <link href="./style-race.css" rel= "stylesheet" type= "text/css">
 </head>
 
 <body>
-  <header>
-   <img src="images/finish-flags.png" alt="flags">
-   <button class='button'> START </button>
-  </header>
-
   <main>
+  <header></header>
+  <h1>Race On</h1>
+  <p>🏁 Press ➡️   for green & 🇿 for yellow 😎</p>
+
+  <img id ="flag" src="images/finish-flags.png" alt="flags" align="left">
+  <input type="button" value="Start" id="button"  style="float: center">
+  <input type="button" value="Reset" id="reset">
+
     <span id='banner'></span>
-    <div class='container'>
+    <div id='race'>
+      <div class="icon"></div>
       <div id='player1' class='player car1'> <img src="images/car1.png" alt="car1"></div>
       <div id='player2' class='player car2'> <img src="images/car2.png" alt="car2"></div>
     </div>
